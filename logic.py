@@ -2,6 +2,8 @@ import chapters
 
 import sys, time, random
 
+name_localized = 'Walk in Berlin'
+
 speed_1 = ["Slow", 300]
 speed_2 = ["Normal", 400]
 speed_3 = ["Fast", 500]
@@ -87,7 +89,7 @@ def main():
 		print()
 		print("########################")
 		print("#                      #")
-		print("#    WALK IN BERLIN    #")
+		print("#    " + name_localized.upper() + "    #")
 		print("#    Patrick Cotter    #")
 		print("#                      #")
 		print("########################")

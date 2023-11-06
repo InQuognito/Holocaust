@@ -2,7 +2,7 @@ import logic
 import choices
 
 def tutorial():
-	logic.print_text("Welcome to Enigma of Berlin! This is a text-based adventure game that takes place in the early stages of the Holocaust. This game aims to replicate the style of some of the first video games ever made.\nIn this game, you will get to choose your own path and decide your own fate. It also contains some very light puzzle-solving elements.\n\nIt is also important to keep in mind that this is an interpretive experience. Much of the content is metaphorical in nature, and in no way reflects real experiences of German citizens or Jewish people during this time.")
+	logic.print_text("Welcome to " + logic.name_localized + "! This is a text-based adventure game that takes place in the early stages of the Holocaust. This game aims to replicate the style of some of the first video games ever made.\nIn this game, you will get to choose your own path and decide your own fate. It also contains some very light puzzle-solving elements.\n\nIt is also important to keep in mind that this is an interpretive experience. Much of the content is metaphorical in nature, and in no way reflects real experiences of German citizens or Jewish people during this time.")
 	logic.time.sleep(0.5)
 
 	logic.print_text("The story will provide you with a prompt and give you choices on how to respond. It will look something like this:")
