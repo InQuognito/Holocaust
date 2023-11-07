@@ -4,10 +4,10 @@ import sys, time, random
 
 name_localized = 'Walk in Berlin'
 
-speed_1 = ["Slow", 300]
-speed_2 = ["Normal", 400]
-speed_3 = ["Fast", 500]
-speed_4 = ["Very Fast", 600]
+speed_1 = ["Slow", 200]
+speed_2 = ["Normal", 300]
+speed_3 = ["Fast", 400]
+speed_4 = ["Very Fast", 500]
 
 debug = False
 if (debug == False):
@@ -17,12 +17,12 @@ else:
 
 def encode_memory(memory):
 	with open('brain.txt', "a") as file:
-		file.write(memory)
+		file.write(memory + "\n")
 
 def recall_memory(memory):
 	with open('brain.txt') as file:
 		for line in file:
-			if line == memory:
+			if line == (memory + "\n"):
 				return True
 
 def print_text(text):
